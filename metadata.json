@@ -1,0 +1,5 @@
+{
+  "name": "RetroFix Beeper Typewriter",
+  "description": "A retro-styled application combining a vintage Motorola-style beeper input with a mechanical typewriter output effect. Users can type messages, optionally enhance them with Gemini AI, and drag the resulting printed cards around a corkboard workspace.",
+  "requestFramePermissions": []
+}

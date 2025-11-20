@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroFix Beeper Writer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              pager: ['"VT323"', 'monospace'],
+              typewriter: ['"Courier Prime"', 'monospace'],
+            },
+            colors: {
+              'desk-bg': '#f3f4f6',
+              'ultra-violet': '#8338EC',
+              'ultra-violet-dark': '#6020c0',
+              'ultra-violet-light': '#9d5bf5',
+              'cyber-yellow': '#FFD60A',
+              'cyber-yellow-dark': '#e6c009',
+              'paper-white': '#fffdf5',
+            },
+            boxShadow: {
+              'plastic': 'inset 1px 1px 0px rgba(255, 255, 255, 0.3), inset -2px -2px 5px rgba(0, 0, 0, 0.3), 8px 8px 20px rgba(131, 56, 236, 0.25)',
+              'screen-glow': 'inset 0 0 10px rgba(255, 214, 10, 0.5)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f3f4f6;
+        overflow: hidden;
+      }
+      /* Custom scrollbar for text areas */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      /* Dot pattern background */
+      .bg-dot-pattern {
+        background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
