@@ -34,11 +34,11 @@
       }
     </script>
     <style>
+      /* 保持透明背景 */
       body {
-        background-color: #f3f4f6;
+        background-color: transparent; 
         overflow: hidden;
       }
-      /* Custom scrollbar for text areas */
       .scrollbar-hide::-webkit-scrollbar {
           display: none;
       }
@@ -46,29 +46,13 @@
           -ms-overflow-style: none;
           scrollbar-width: none;
       }
-      
-      /* Dot pattern background */
-      .bg-dot-pattern {
-        background-image: radial-gradient(#d1d5db 1px, transparent 1px);
-        background-size: 24px 24px;
-      }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <!-- 修复点 1: 这里加上 /src/ -->
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <!-- 修复点 2: 这里加上 /src/ -->
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
