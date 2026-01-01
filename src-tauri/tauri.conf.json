@@ -2,7 +2,7 @@
   "build": {
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
-    "devPath": "http://localhost:5173",
+    "devPath": "http://localhost:3000",
     "distDir": "../dist",
     "withGlobalTauri": false
   },
@@ -18,6 +18,10 @@
         "setIgnoreCursorEvents": true
       }
     },
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
     "bundle": {
       "active": true,
       "targets": "all",
@@ -32,13 +36,14 @@
     "windows": [
       {
         "title": "RetroFix Beeper",
-        "width": 800,
-        "height": 600,
+        "width": 1920,
+        "height": 1040,
         "resizable": false,
-        "fullscreen": true,
+        "fullscreen": false,
         "decorations": false,
         "transparent": true,
-        "alwaysOnTop": true,
+        "alwaysOnTop": false,
+        "skipTaskbar": true,
         "visible": true
       }
     ]

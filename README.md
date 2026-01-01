@@ -16,5 +16,11 @@ View your app in AI Studio: https://ai.studio/apps/drive/1Ub_YO2vllKm4AQM7Cb3KjE
 1. Install dependencies:
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. Run the app (Wallpaper Mode):
+   `npm run tauri dev`
+   
+   *Note: The app will now launch as a desktop wallpaper layer. It will be behind your desktop icons.*
+
+## Building for Production
+`npm run tauri build`
+
