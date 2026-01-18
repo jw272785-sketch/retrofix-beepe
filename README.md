@@ -11,7 +11,12 @@
 
 ---
 
-## 📖 项目简介 (Introduction)
+
+## 📖
+
+https://github.com/user-attachments/assets/f63854c9-acc0-43e0-b3a2-37393ad8225d
+
+ 项目简介 (Introduction)
 
 **Retrofix Beepe** 不仅仅是一个桌面便签工具，它是为多任务处理者打造的 **AI 辅助思考空间**。
 
